@@ -592,6 +592,21 @@ ul.squared {
 }
 /* line 9, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\000039}}
+body {
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
+}
+/* line 12, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000312}}
+body.in {
+  opacity: 1;
+}
+/* line 16, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000316}}
 .fade-in {
   opacity: 0;
   -webkit-transition: opacity 0.5s;
@@ -600,24 +615,24 @@ ul.squared {
   -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
-/* line 12, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000312}}
+/* line 19, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000319}}
 .active.fade-in,
 .active .fade-in {
   opacity: 1;
 }
-/* line 15, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000315}}
+/* line 22, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000322}}
 .appear {
   visibility: hidden;
 }
-/* line 16, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000316}}
+/* line 23, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000323}}
 .active .appear {
   visibility: visible;
 }
-/* line 18, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000318}}
+/* line 25, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000325}}
 .move-up {
   position: relative;
   top: 100px;
@@ -628,14 +643,14 @@ ul.squared {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 23, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000323}}
+/* line 30, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000330}}
 .active .move-up {
   top: 0px;
   opacity: 1;
 }
-/* line 27, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000327}}
+/* line 34, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000334}}
 .roll-down {
   position: relative;
   height: 0;
@@ -646,13 +661,13 @@ ul.squared {
   -o-transition: height 0.5s;
   transition: height 0.5s;
 }
-/* line 33, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000333}}
+/* line 40, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000340}}
 .active .roll-down {
   height: auto;
 }
-/* line 48, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000348}}
+/* line 55, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000355}}
 .delay-1s {
   -webkit-transition-delay: 1s;
   -moz-transition-delay: 1s;
@@ -660,8 +675,8 @@ ul.squared {
   -o-transition-delay: 1s;
   transition-delay: 1s;
 }
-/* line 49, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000349}}
+/* line 56, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000356}}
 .delay-1_2s {
   -webkit-transition-delay: 1.2s;
   -moz-transition-delay: 1.2s;
@@ -669,8 +684,8 @@ ul.squared {
   -o-transition-delay: 1.2s;
   transition-delay: 1.2s;
 }
-/* line 50, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000350}}
+/* line 57, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000357}}
 .delay-1_4s {
   -webkit-transition-delay: 1.4s;
   -moz-transition-delay: 1.4s;
@@ -678,8 +693,8 @@ ul.squared {
   -o-transition-delay: 1.4s;
   transition-delay: 1.4s;
 }
-/* line 51, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000351}}
+/* line 58, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000358}}
 .delay-1_6s {
   -webkit-transition-delay: 1.6s;
   -moz-transition-delay: 1.6s;
@@ -687,8 +702,8 @@ ul.squared {
   -o-transition-delay: 1.6s;
   transition-delay: 1.6s;
 }
-/* line 52, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000352}}
+/* line 59, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000359}}
 .delay-2s {
   -webkit-transition-delay: 2s;
   -moz-transition-delay: 2s;
@@ -696,8 +711,8 @@ ul.squared {
   -o-transition-delay: 2s;
   transition-delay: 2s;
 }
-/* line 53, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000353}}
+/* line 60, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000360}}
 .delay-2_2s {
   -webkit-transition-delay: 2.2s;
   -moz-transition-delay: 2.2s;
@@ -705,8 +720,8 @@ ul.squared {
   -o-transition-delay: 2.2s;
   transition-delay: 2.2s;
 }
-/* line 54, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000354}}
+/* line 61, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000361}}
 .delay-3s {
   -webkit-transition-delay: 3s;
   -moz-transition-delay: 3s;
@@ -714,8 +729,8 @@ ul.squared {
   -o-transition-delay: 3s;
   transition-delay: 3s;
 }
-/* line 55, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000355}}
+/* line 62, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000362}}
 .delay-4s {
   -webkit-transition-delay: 4s;
   -moz-transition-delay: 4s;
@@ -723,8 +738,8 @@ ul.squared {
   -o-transition-delay: 4s;
   transition-delay: 4s;
 }
-/* line 56, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000356}}
+/* line 63, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000363}}
 .delay-5s {
   -webkit-transition-delay: 5s;
   -moz-transition-delay: 5s;
@@ -733,19 +748,19 @@ ul.squared {
   transition-delay: 5s;
 }
 @-webkit-keyframes blinker {
-  /* line 59, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000359}}
+  /* line 66, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000366}}
   from {
     opacity: 1.0;
   }
-  /* line 60, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000360}}
+  /* line 67, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000367}}
   to {
     opacity: 0.0;
   }
 }
-/* line 62, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000362}}
+/* line 69, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000369}}
 .blink {
   -webkit-animation-name: blinker;
   -webkit-animation-iteration-count: infinite;

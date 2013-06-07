@@ -170,7 +170,8 @@ PR['registerLangHandler'](
 
 
 
-(function(impress) {
+(function(impress,$) {
     var impress = impress();
     impress.init();
-})(impress);
+    $("body").addClass("in");
+})(impress,jQuery);
