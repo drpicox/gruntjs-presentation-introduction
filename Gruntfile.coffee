@@ -20,10 +20,13 @@ module.exports = (grunt) ->
     concat:
       scripts: files:
         'build/scripts.js': [
+          'src/scripts/livereload-run.js'
           'src/scripts/lang-*.js'
           'src/scripts/prettify-run.js'
           'src/scripts/offsets-run.js'
           'src/scripts/impress-run.js'
+          'src/scripts/analytics-run.js'
+          'src/scripts/analytics-impress-run.js'
           ]
 #      styles:  files: 'build/styles.css': 'src/styles/**/*.css'
       components: files:
