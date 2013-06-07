@@ -1,3 +1,13 @@
+    (function(){
+    var hostname = window.location.hostname.toLowerCase();
+    if (hostname == "localhost" || hostname.slice(0,3) == "192") {
+    var port = 19002;//35729;
+    var livereload = document.createElement("SCRIPT");
+    livereload.setAttribute('src', 
+    'http://'+window.location.hostname+':'+port+'/livereload.js');
+    document.getElementsByTagName("BODY")[0].appendChild(livereload);
+    }})();
+
 try {
 
 PR['registerLangHandler'](
@@ -170,8 +180,31 @@ PR['registerLangHandler'](
 
 
 
-(function(impress,$) {
+(function(impress,$,ga) {
+    // Initialize impress
     var impress = impress();
     impress.init();
+
+    // Show body
     $("body").addClass("in");
 })(impress,jQuery);
+
+/** google code ************************************************************/
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-41577406-1', 'drpicox.github.io');
+ga('send', 'pageview');
+/** end google code ********************************************************/
+
+(function(window,$,ga) {
+    
+
+    var path = window.location.pathname;
+    
+    $(".step").on("impress:stepenter", function (ev) {
+	ga('send', 'pageview', path + "/" + $(this).attr('id'));
+    });
+    
+})(window,jQuery,ga);
