@@ -1,0 +1,807 @@
+/** All styles */
+/* line 1, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/body.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/body\.less}line{font-family:\000031}}
+body {
+  background: #eeeff4;
+  font-family: 'Gill Sans', 'Open Sans', sans-serif;
+  color: #525252;
+  font-weight: 300;
+  font-size: 25px;
+  text-rendering: optimizeLegibility;
+}
+/* line 10, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/body.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/body\.less}line{font-family:\0000310}}
+h1 {
+  text-transform: uppercase;
+}
+/* line 13, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/body.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/body\.less}line{font-family:\0000313}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  text-align: center;
+}
+/* line 17, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/body.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/body\.less}line{font-family:\0000317}}
+pre code {
+  font-size: 22px;
+}
+/* line 1, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/typo.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/typo\.less}line{font-family:\000031}}
+.centered {
+  text-align: center;
+}
+/* line 5, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/typo.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/typo\.less}line{font-family:\000035}}
+.xx-small {
+  font-size: 45%;
+}
+/* line 8, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/typo.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/typo\.less}line{font-family:\000038}}
+.x-small {
+  font-size: 60%;
+}
+/* line 11, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/typo.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/typo\.less}line{font-family:\0000311}}
+.small {
+  font-size: 80%;
+}
+/* line 14, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/typo.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/typo\.less}line{font-family:\0000314}}
+.large {
+  font-size: 125%;
+}
+/* line 17, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/typo.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/typo\.less}line{font-family:\0000317}}
+.x-large {
+  font-size: 175%;
+}
+/* line 20, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/typo.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/typo\.less}line{font-family:\0000320}}
+.xx-large {
+  font-size: 275%;
+}
+/* line 23, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/typo.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/typo\.less}line{font-family:\0000323}}
+.xxx-large {
+  font-size: 400%;
+}
+/* line 5, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/step.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/step\.less}line{font-family:\000035}}
+.step {
+  width: 820px;
+  position: relative;
+}
+/* line 1, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/step-bullets.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/step-bullets\.less}line{font-family:\000031}}
+.bullets-box {
+  position: absolute;
+  top: 145px;
+  line-height: 435px;
+  max-width: 820px;
+}
+/* line 7, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/step-bullets.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/step-bullets\.less}line{font-family:\000037}}
+.bullets-box ul.bullets {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 13, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/step-bullets.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/step-bullets\.less}line{font-family:\0000313}}
+ul.bullets {
+  width: 90%;
+  line-height: 1.3;
+}
+/* line 18, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/step-bullets.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/step-bullets\.less}line{font-family:\0000318}}
+ul.bullets li + li {
+  margin-top: 1.5em;
+}
+/* line 22, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/step-bullets.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/step-bullets\.less}line{font-family:\0000322}}
+ul.bullets ul {
+  font-size: 80%;
+}
+/* line 24, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/step-bullets.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/step-bullets\.less}line{font-family:\0000324}}
+ul.bullets ul li {
+  margin-top: 0.5em;
+}
+/* line 31, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/step-bullets.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/step-bullets\.less}line{font-family:\0000331}}
+ul.compact li + li {
+  margin-top: 0.5em;
+}
+/* line 34, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/step-bullets.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/step-bullets\.less}line{font-family:\0000334}}
+ul.squared {
+  list-style-type: square;
+}
+/* line 5, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide\.less}line{font-family:\000035}}
+.step.slide {
+  height: 580px;
+}
+/* line 9, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide\.less}line{font-family:\000039}}
+.step.slide.with-light::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  bottom: -60px;
+  right: -60px;
+  background: white;
+  z-index: -1;
+  border-radius: 15px;
+}
+/* line 16, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide\.less}line{font-family:\0000316}}
+.step.slide.with-light code {
+  background: #eeeff4;
+}
+/* line 26, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide\.less}line{font-family:\0000326}}
+.step.slide.with-brackets::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  bottom: -120px;
+  width: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 1000px 0 0 rgba(0, 0, 0, 0.7);
+}
+/* line 33, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide\.less}line{font-family:\0000333}}
+.step.slide.with-brackets::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: -120px;
+  left: -60px;
+  height: 60px;
+  width: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 880px 0 0 rgba(0, 0, 0, 0.7), 0 760px 0 rgba(0, 0, 0, 0.7), 880px 760px 0 rgba(0, 0, 0, 0.7);
+}
+/* line 48, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide\.less}line{font-family:\0000348}}
+.step.slide.with-bracket-left::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  bottom: -120px;
+  width: 60px;
+  background: rgba(0, 0, 0, 0.7);
+}
+/* line 54, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide\.less}line{font-family:\0000354}}
+.step.slide.with-bracket-left::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: -120px;
+  left: -60px;
+  height: 60px;
+  width: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 760px 0 rgba(0, 0, 0, 0.7);
+}
+/* line 67, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide\.less}line{font-family:\0000367}}
+.step.slide.with-bracket-top::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: -120px;
+  top: -120px;
+  right: -120px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+}
+/* line 73, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide\.less}line{font-family:\0000373}}
+.step.slide.with-bracket-top::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: -120px;
+  top: -60px;
+  height: 60px;
+  width: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 1000px 0 0 rgba(0, 0, 0, 0.7);
+}
+/* line 14, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\0000314}}
+.step.slide img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 16, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\0000316}}
+.step.slide > .by {
+  position: absolute;
+  text-align: left;
+  top: 80%;
+  left: 66%;
+  bottom: 0;
+  right: 0;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000033}}
+.step.slide > .by > div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 5, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000035}}
+.step.slide > .by > div > div {
+  display: table-cell;
+  vertical-align: bottom;
+}
+/* line 21, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\0000321}}
+.step.slide > .co {
+  position: absolute;
+  text-align: left;
+  top: 90%;
+  left: 0%;
+  bottom: 0;
+  right: 0%;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000033}}
+.step.slide > .co > div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 5, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000035}}
+.step.slide > .co > div > div {
+  display: table-cell;
+  vertical-align: bottom;
+}
+/* line 29, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\0000329}}
+.step.slide > .title.with-subtitle h1 {
+  margin-bottom: 0;
+}
+/* line 30, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\0000330}}
+.step.slide > .title.with-subtitle h3 {
+  margin-top: 0;
+  text-transform: lowercase;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000033}}
+.step.slide > .title > div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 5, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000035}}
+.step.slide > .title > div > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000033}}
+.step.slide > .row > div,
+.step.slide > .column > div,
+.step.slide > .bullets > div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 5, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000035}}
+.step.slide > .row > div > div,
+.step.slide > .column > div > div,
+.step.slide > .bullets > div > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000033}}
+.step.slide > .top > div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 5, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000035}}
+.step.slide > .top > div > div {
+  display: table-cell;
+  vertical-align: top;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000033}}
+.step.slide > .middle > div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 5, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000035}}
+.step.slide > .middle > div > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000033}}
+.step.slide > .bottom > div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 5, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000035}}
+.step.slide > .bottom > div > div {
+  display: table-cell;
+  vertical-align: bottom;
+}
+/*
+  .height-align(@scale,@valign) { 
+    line-height: @slideHeight*@scale;
+    &>div { 
+      line-height: normal;
+      display: inline-block;
+      vertical-align: @valign;
+      }
+    }
+
+  .height-align(@scale,@valign) { 
+    line-height: @slideHeight*@scale;
+    &>div { 
+      line-height: 1;
+      display: inline-block;
+      vertical-align: @valign;
+      }
+    }
+
+
+  &>.by { 
+    position: absolute; text-align: left;
+    top: 80%; left: 66%; right: 0; 
+    background: red; 
+    .height-align(0.2, middle);
+    //adisplay: table-cell; 
+    //aline-height: @slideHeight * 0.2; avertical-align: bottom;
+    }
+
+*/
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-photo-title.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-photo-title\.less}line{font-family:\000033}}
+.step.slide.master-photo-title > .photo {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 50%;
+  right: 0;
+}
+/* line 8, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-photo-title.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-photo-title\.less}line{font-family:\000038}}
+.step.slide.master-photo-title > .title {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000033}}
+.step.slide.master-photo-title > .title > div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 5, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/slide-components.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/slide-components\.less}line{font-family:\000035}}
+.step.slide.master-photo-title > .title > div > div {
+  display: table-cell;
+  vertical-align: top;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-bullets.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-bullets\.less}line{font-family:\000033}}
+.step.slide.master-title-bullets > .title {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 30%;
+  right: 0;
+}
+/* line 8, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-bullets.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-bullets\.less}line{font-family:\000038}}
+.step.slide.master-title-bullets > .bullets {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  height: 70%;
+  right: 0;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-2rows.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-2rows\.less}line{font-family:\000033}}
+.step.slide.master-title-2rows > .title {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 30%;
+  right: 0;
+}
+/* line 8, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-2rows.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-2rows\.less}line{font-family:\000038}}
+.step.slide.master-title-2rows > .row {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  height: 35%;
+  right: 0;
+}
+/* line 12, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-2rows.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-2rows\.less}line{font-family:\0000312}}
+.step.slide.master-title-2rows > .row + .row {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-2columns.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-2columns\.less}line{font-family:\000033}}
+.step.slide.master-title-2columns > .title {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 30%;
+  right: 0;
+}
+/* line 8, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-2columns.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-2columns\.less}line{font-family:\000038}}
+.step.slide.master-title-2columns > .column {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  height: 70%;
+  width: 50%;
+}
+/* line 12, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-2columns.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-2columns\.less}line{font-family:\0000312}}
+.step.slide.master-title-2columns > .column + .column {
+  left: 50%;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-3columns.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-3columns\.less}line{font-family:\000033}}
+.step.slide.master-title-3columns > .title {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 30%;
+  right: 0;
+}
+/* line 8, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-3columns.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-3columns\.less}line{font-family:\000038}}
+.step.slide.master-title-3columns > .column {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  height: 70%;
+  width: 33.3333%;
+}
+/* line 12, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-3columns.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-3columns\.less}line{font-family:\0000312}}
+.step.slide.master-title-3columns > .column + .column {
+  left: 33.3333%;
+}
+/* line 15, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-3columns.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-3columns\.less}line{font-family:\0000315}}
+.step.slide.master-title-3columns > .column + .column + .column {
+  left: 66.6667%;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-4columns.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-4columns\.less}line{font-family:\000033}}
+.step.slide.master-title-4columns > .title {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 30%;
+  right: 0;
+}
+/* line 8, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-4columns.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-4columns\.less}line{font-family:\000038}}
+.step.slide.master-title-4columns > .column {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  height: 70%;
+  width: 25%;
+}
+/* line 12, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-4columns.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-4columns\.less}line{font-family:\0000312}}
+.step.slide.master-title-4columns > .column + .column {
+  left: 25%;
+}
+/* line 15, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-4columns.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-4columns\.less}line{font-family:\0000315}}
+.step.slide.master-title-4columns > .column + .column + .column {
+  left: 50%;
+}
+/* line 18, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-title-4columns.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-title-4columns\.less}line{font-family:\0000318}}
+.step.slide.master-title-4columns > .column + .column + .column + .column {
+  left: 75%;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-2rows.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-2rows\.less}line{font-family:\000033}}
+.step.slide.master-2rows > .row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  right: 0;
+}
+/* line 7, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-2rows.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-2rows\.less}line{font-family:\000037}}
+.step.slide.master-2rows > .row + .row {
+  top: 50%;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-photo-row.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-photo-row\.less}line{font-family:\000033}}
+.step.slide.master-photo-row > .photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  right: 0;
+}
+/* line 6, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-photo-row.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-photo-row\.less}line{font-family:\000036}}
+.step.slide.master-photo-row > .photo img.photo {
+  height: 290px;
+}
+/* line 8, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/master-photo-row.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/master-photo-row\.less}line{font-family:\000038}}
+.step.slide.master-photo-row > .row {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 50%;
+  right: 0;
+}
+/* line 9, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\000039}}
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+/* line 12, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000312}}
+.active.fade-in,
+.active .fade-in {
+  opacity: 1;
+}
+/* line 15, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000315}}
+.appear {
+  visibility: hidden;
+}
+/* line 16, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000316}}
+.active .appear {
+  visibility: visible;
+}
+/* line 18, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000318}}
+.move-up {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 23, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000323}}
+.active .move-up {
+  top: 0px;
+  opacity: 1;
+}
+/* line 27, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000327}}
+.roll-down {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  transition: height 0.5s;
+}
+/* line 33, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000333}}
+.active .roll-down {
+  height: auto;
+}
+/* line 48, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000348}}
+.delay-1s {
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+/* line 49, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000349}}
+.delay-1_2s {
+  -webkit-transition-delay: 1.2s;
+  -moz-transition-delay: 1.2s;
+  -ms-transition-delay: 1.2s;
+  -o-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+/* line 50, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000350}}
+.delay-1_4s {
+  -webkit-transition-delay: 1.4s;
+  -moz-transition-delay: 1.4s;
+  -ms-transition-delay: 1.4s;
+  -o-transition-delay: 1.4s;
+  transition-delay: 1.4s;
+}
+/* line 51, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000351}}
+.delay-1_6s {
+  -webkit-transition-delay: 1.6s;
+  -moz-transition-delay: 1.6s;
+  -ms-transition-delay: 1.6s;
+  -o-transition-delay: 1.6s;
+  transition-delay: 1.6s;
+}
+/* line 52, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000352}}
+.delay-2s {
+  -webkit-transition-delay: 2s;
+  -moz-transition-delay: 2s;
+  -ms-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s;
+}
+/* line 53, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000353}}
+.delay-2_2s {
+  -webkit-transition-delay: 2.2s;
+  -moz-transition-delay: 2.2s;
+  -ms-transition-delay: 2.2s;
+  -o-transition-delay: 2.2s;
+  transition-delay: 2.2s;
+}
+/* line 54, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000354}}
+.delay-3s {
+  -webkit-transition-delay: 3s;
+  -moz-transition-delay: 3s;
+  -ms-transition-delay: 3s;
+  -o-transition-delay: 3s;
+  transition-delay: 3s;
+}
+/* line 55, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000355}}
+.delay-4s {
+  -webkit-transition-delay: 4s;
+  -moz-transition-delay: 4s;
+  -ms-transition-delay: 4s;
+  -o-transition-delay: 4s;
+  transition-delay: 4s;
+}
+/* line 56, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000356}}
+.delay-5s {
+  -webkit-transition-delay: 5s;
+  -moz-transition-delay: 5s;
+  -ms-transition-delay: 5s;
+  -o-transition-delay: 5s;
+  transition-delay: 5s;
+}
+@-webkit-keyframes blinker {
+  /* line 59, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000359}}
+  from {
+    opacity: 1.0;
+  }
+  /* line 60, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000360}}
+  to {
+    opacity: 0.0;
+  }
+}
+/* line 62, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/animations.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/animations\.less}line{font-family:\0000362}}
+.blink {
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-duration: 1s;
+}
+/* line 1, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/code.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/code\.less}line{font-family:\000031}}
+pre {
+  padding: 20px;
+  border-radius: 10px;
+}
+/* line 5, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/code.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/code\.less}line{font-family:\000035}}
+code {
+  background: white;
+}
+/* line 8, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/code.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/code\.less}line{font-family:\000038}}
+.prettify code {
+  background: transparent;
+}
+/* line 11, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/code.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/code\.less}line{font-family:\0000311}}
+pre.small {
+  padding: 10px;
+}
+/* line 13, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/code.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/code\.less}line{font-family:\0000313}}
+pre.small code {
+  font-size: 85%;
+}
+/* line 1, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/images.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/images\.less}line{font-family:\000031}}
+.row-of-images {
+  vertical-align: middle;
+}
+/* line 3, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/images.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/images\.less}line{font-family:\000033}}
+.row-of-images img {
+  max-height: 1em;
+}
+/* line 6, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/images.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/images\.less}line{font-family:\000036}}
+img.inline {
+  height: 1em;
+}
+/* line 12, /home/drodenas/NetBeansProjects/gruntjs-presentation-introduction/src/styles/images.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/drodenas\/NetBeansProjects\/gruntjs-presentation-introduction\/src\/styles\/images\.less}line{font-family:\0000312}}
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img,
+li img,
+p img {
+  height: 1em;
+}
