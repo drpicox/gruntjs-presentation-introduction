@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GruntJS Presentation - Introduction</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600' rel='stylesheet' type='text/css'>
+    <link href="components.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="impress-not-supported">
+      
+    <div id="impress" data-transition-duration="700">
+
+<div id="index" class="step slide with-brackets master-title-bullets"
+     data-off-ref="grunt" data-off-x="370" 
+     data-scale="18">
+  <div class="title top"><div><div>
+    <h1>Thanks!</h1>
+  </div></div></div>
+
+  <div class="small co"><div><div>
+    Dr. David Rodenas / <a href="https://twitter.com">@drpicox</a>
+  </div></div></div>
+</div>
+
+
+<!-- ===
+  -- == TITLE
+  -- ========================================================= -->
+<div id="grunt" class="step slide with-light master-photo-title"
+     data-x="0" data-y="0"
+     data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+  
+  <div class="photo"><div><div>
+    <img src="images/gruntjs.png">
+  </div></div></div>
+
+  <div class="title with-subtitle"><div><div>
+    <h1>Introduction to GruntJS</h1>
+    <h3>Optimize a web page with a single command</h3>
+  </div></div></div>
+  
+  <div class="by"><div><div>
+    Dr. David Rodenas 
+    <br>
+    <a href="https://twitter.com">@drpicox</a>
+  </div></div></div>
+</div><!-- end #home -->
+
+<!-- grunt COMMAND -->
+<div id="grunt-command" class="step"
+     data-off-x="1000" data-z="0">
+  <h1>One single command</h1><br>
+  <pre class="prettyprint"><code class="language-term">
+$ grunt 
+Compressing html...OK
+Concatenating and compressing css...OK
+Concatenating and compressing js...OK
+...
+Done, without errors.
+$ _
+  </code></pre><br><br>
+  <div class="centered xxx-large row-of-images"> 
+    <img src="images/html5.png"> 
+            +
+    <img src="images/css3.png"> 
+            +
+    <img src="images/javascript.png">
+            &#x2192; <!-- &#x21E8; arrows --> 
+    <img src="images/web-server.png">
+  </div>
+</div>
+
+<!-- ===
+  -- == grunt TASKS
+  -- ======================================================== -->
+<div id="grunt-tasks" class="step slide with-brackets master-title-2rows"
+     data-off-x="800" data-scale="5" data-rotate-z="0"
+     data-duration="4000">
+  <div class="title"><div><div>
+    <h1>Grunt are <strong>tasks</strong></h1>
+  </div></div></div>
+  <div class="row top"><div><div>
+    &gt; LIBRARY TASKS <small>(multi-tasks)</small>
+  </div></div></div>
+  <div class="row top"><div><div>
+    &gt; SEQUENCES of TASKS <small>(alias-tasks)</small>
+    
+  </div></div></div>
+</div>
+<!-- grunt tasks LIBRARY ----------------------------------- -->
+<div id="grunt-tasks-library" class="step slide master-title-2columns"
+     data-off-scale="0.2"
+     data-off-x="-1500" 
+     >
+  <div class="title"><div><div>
+    <h1>There are lots of them</h1>
+  </div></div></div>
+  <div class="column top"><div><div>
+    <ul class="bullets">
+      <li>grunt-contrib-htmlmin <img src="images/html5.png"></li>
+      <li>grunt-contrib-cssmin <img src="images/css3.png"></li>
+      <li>grunt-contrib-uglify <img src="images/javascript.png"></li>
+      <li>grunt-contrib-imagemin <img src="images/photo.png"></li>
+
+      <li>grunt-contrib-copy</li>
+      <li>grunt-contrib-concat</li>
+    </ul>
+  </div></div></div>
+  <div class="column top"><div><div>
+    <ul class="bullets">
+      <li>grunt-contrib-csslint <img src="images/css3.png"></li>
+      <li>grunt-contrib-jshint <img src="images/javascript.png"></li>
+      <li>grunt-contrib-less <img src="images/lesscss.png"></li>
+      <li>grunt-contrib-sass <img src="images/sass.png"></li>
+      <li>grunt-contrib-coffee <img src="images/coffeescript.png"></li>
+      <li>and many <a href="https://github.com/gruntjs/grunt-contrib#overview"  target="_blank">more</a>!</li>
+    </ul>
+  </div></div></div>
+</div>
+<div class="step slide master-title-2columns"
+     data-off-x="1000">
+  <div class="title"><div><div>
+    <h1>Just need configuration</h1>
+  </div></div></div>
+  <div class="column"><div><div>
+    <ul class="large bullets">
+      <li>Which files use?
+        <ul>
+          <li>Input files</li>
+          <li>Output files</li>
+          <li>You can use patterns!</li>
+        </ul>
+      </li>      
+      <li>Add your options
+        <ul>
+          <li>Compress level? Verbosity? Banners?</li>
+          <li>Very well documented</li>
+        </ul>
+      </li>      
+    </ul>
+  </div></div></div>
+  <div class="column"><div><div>
+    <pre class="small prettyprint"><code class="language-javascript"
+># (C) Gruntfile.coffee config partial
+htmlmin: 
+  dist: 
+    options: 
+      removeComments: true,
+      collapseWhitespaces: true 
+    files: [
+      expand: true
+      cwd: 'src/images'
+      src: '{,*/}*.{png,jpg}'
+      dest: 'build/images'
+      ]</code></pre>
+  </div></div></div>
+</div>
+<div class="step slide master-title-2columns"
+     data-off-x="1000">
+  <div class="title"><div><div>
+    <h1>Many tasks in one</h1>
+  </div></div></div>
+  <div class="column"><div><div>
+    <ul class="large bullets">
+      <li>Options can be shared among configurations</li>
+      <li>Each library task can be configured many times</li>
+      <li>Each configuration is a task</li>
+    </ul>
+  </div></div></div>
+  <div class="column"><div><div>
+    <pre class="small prettyprint"><code class="language-javascript"
+># (C) Gruntfile.coffee config partial
+uglify: 
+  # Common options
+  options: 
+    report: 'min'
+  # Task 'uglify:build' with options
+  build: 
+    options: beautify: true
+    files: 
+      'debug/scripts.js': 
+        ['src/scripts/**/*.js']
+  # Task 'uglify:dist'
+  dist: 
+    files: 
+      'dist/scripts.js': 
+        ['src/scripts/**/*.js']</code></pre>
+  </div></div></div>
+</div>
+
+<div class="step" data-off-ref="grunt-tasks">
+</div>
+
+<!-- grunt tasks SEQUENCE ---------------------------------- -->
+<div id="grunt-tasks-sequence" class="step slide master-title-2rows"
+     data-off-scale="0.2"
+     data-off-x="-1500" data-off-y="1000"
+     >
+  <div class="title"><div><div>
+    <h1>These are our tasks</h1>
+  </div></div></div>
+  <div class="row large"><div><div>
+    <ul><li>Define new tasks as an ordered list of tasks
+      <br><small>(it is a kind of alias)</small>
+    </li>
+    </ul>
+  </div></div></div>
+  <div class="row"><div><div>
+    <pre class="small prettyprint"><code class="language-javascript"
+># (T) Gruntfile.coffee sequence of tasks example
+grunt.registerTask 'dist', [ 'htmlmin:dist', 'cssmin:dist', 'imagemin:dist' ]</code></pre>
+  </div></div></div>
+</div>
+
+<div id="grunt-tasks-sequence-strategy"
+     class="step slide master-title-2columns"
+     data-off-x="1000">
+
+  <div class="title"><div><div>
+    <h1>Define a strategy</h1>
+  </div></div></div>
+  <div class="column"><div><div>
+    <ul class="bullets">
+      <li>My strategy is three directories:
+        <ul>
+          <li><code>src/</code> with sources</li>
+          <li><code>build/</code> for debugging and concatenation</li>
+          <li><code>dist/</code> for final compressed distribution</li>
+        </ul>
+      </li>
+      <li>My main sequence tasks:
+        <ul>
+          <li><code>build</code> prepares a debuggable browsable folder</li>
+          <li><code>dist</code> final compression</li>
+          <li><code>server</code> starts a web server for preview</li>
+        </ul>
+      </li>
+    </ul>
+  </div></div></div>
+
+  <div class="column"><div><div>
+    <pre class="small prettyprint"><code class="language-javascript"
+># (T) Gruntfile.coffee partial seqs.
+grunt.registerTask 'build', [
+  'copy:htmls'
+  'copy:images'
+  'less:styles'
+  'concat:scripts'
+  ]
+grunt.registerTask 'dist', [
+  'build'
+  'htmlmin:htmls'
+  'cssmin:styles'
+  'uglify:scripts'
+  'imagemin:images'
+  ]
+grunt.registerTask 'server', [
+  'build', 'connect', 'watch'
+  ]</code></pre>
+  </div></div></div>
+
+</div>
+
+<div id="grunt-tasks-sequence-strategy-yeoman"
+     class="step slide master-photo-row"
+     data-off-x="3000" data-off-y="-2000" data-scale="0.1">
+  <div class="photo centered"><div><div>
+    <img class="photo" src="images/yeoman.png">
+  </div></div></div>
+  <div class="row"><div><div>
+    <h1>Yeoman is a source of inspiration</h1>
+    <h3>and examples!</h3>
+    <br>
+    <h5><a href="http://yeoman.io/" target="_blank">http://yeoman.io/</a></h5>
+  </div></div></div>
+</div>
+
+<div data-off-ref="grunt-tasks-sequence-strategy"
+     class="step slide master-title-2rows"
+     data-off-x="1000">
+
+  <div class="title"><div><div>
+    <h1>A very special task</h1>
+  </div></div></div>
+  <div class="row"><div><div>
+    <h2><code>default</code></h2> 
+    <p class="centered">is the one executed when grunt is
+      invoked without arguments</p>
+  </div></div></div>
+
+  <div class="row"><div><div>
+    <pre class="small prettyprint"><code class="language-javascript"
+># (T) Gruntfile.coffee partial sequences
+grunt.registerTask 'default', [ 'server' ]</code></pre>
+  </div></div></div>
+
+</div>
+
+<!-- ===
+  -- =   HANDSON 
+  -- =================================================== -->
+
+<div id="hands-on" class="step slide with-bracket-top master-title-4columns"
+     data-off-ref="grunt-tasks"
+     data-off-x="1200"
+     data-off-scale="1">
+  <div class="title"><div><div>
+    <h1>&lt; Hands on &gt;</h1>
+  </div></div></div>
+  <div class="column top"><div><div>
+    <h3>CREATE PROJECT</h3>
+  </div></div></div>
+  <div class="column top"><div><div>
+    <h3>RUNNING A WEBSERVER</h3>
+  </div></div></div>
+  <div class="column top"><div><div>
+    <h3>MINI<br>FICATION</h3>
+  </div></div></div>
+  <div class="column top"><div><div>
+    <h3>BONUS<br>TRACK</h3>
+  </div></div></div>
+</div>
+
+<!-- = PROJECT CREATE 
+  -- ================================================== -->
+
+<!-- project create DIRECTORY -->
+<div id="project-create" class="step"      
+     data-off-scale="0.15"
+     data-off-x="-2070" data-off-y="400">
+        <h2>Create the directory structure for your project *</h2>
+        <p>
+          Also copy your web files to a subdirectory
+          (I assume <code>src/</code>):
+        </p> 
+        <pre class="prettyprint"><code class="language-term">
+$ mkdir my-web-site
+$ cd my-web-site
+$ unzip ~/my-web-site.zip -d src/
+$ _
+        </code></pre>       
+      </div>
+
+      <!-- project create PACKAGE.json -->
+      <div id="project-create-package-json" class="step" data-off-y="800">
+        <h2>Create the <code>package.json</code> file *</h2>
+        <pre class="prettyprint"><code class="language-javascript">
+{
+  "name": "my-web-site",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": { "node": ">=0.8.0" }
+}
+        </code></pre>
+        <p>This is a standard <img src="images/npm.png"> package.json file.</p>
+      </div>
+
+      <!-- project create INSTALL GRUNT-CLI -->
+      <div id="project-create-grunt-cli" class="step" data-off-y="800">
+        <h2>Install the grunt app *</h2>
+        <p><code>grunt-cli</code> is the command line interface.</p>
+        <pre class="prettyprint"><code class="language-term">
+$ npm install "grunt-cli"
+npm http GET https://registry.npmjs.org/grunt-cli
+npm http 304 https://registry.npmjs.org/grunt-cli
+...
+grunt-cli@0.1.9 node_modules/grunt-cli
+├── resolve@0.3.1
+├── nopt@1.0.10 (abbrev@1.0.4)
+└── findup-sync@0.1.2 (lodash@1.0.1, glob@3.1.21)</span>
+$ _
+        </code></pre>
+      </div>
+
+      <!-- project create GRUNTFILE.js -->
+      <div id="project-create-gruntfile-js" class="step" data-off-y="800">
+        <h2>Create a <code>Gruntfile.js</code> *</h2>
+        <pre class="prettyprint"><code class="language-javascript">
+/** Gruntfile.js */
+module.exports = function(grunt) {
+
+  // Project tasks configurations
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json')
+    
+    // (C) Tasks configurations here
+  });
+
+  // (L) Load here grunt plugins with tasks
+
+  // (T) Add here your task(s) 
+  grunt.registerTask('default', []);
+};
+        </code></pre>
+        <p>
+          You can use a <code>Gruntfile.coffee</code> 
+          instead of a <code>Gruntfile.js</code>.
+        </p>
+      </div>
+
+      <!-- project create GRUNT package -->
+      <div id="project-create-grunt-package" class="step" data-off-y="800">
+        <h2>Install grunt package *</h2>
+        <p><small><strong>Important</strong>: 
+          use <code>--save-dev</code> to automatically add
+          it to your <code>package.json</code>.</small>
+        </p>
+        <pre class="prettyprint"><code class="language-term">
+$ npm install --save-dev "grunt"
+npm http GET https://registry.npmjs.org/grunt
+npm http 304 https://registry.npmjs.org/grunt
+...
+$ _
+        </code></pre>
+     </div>
+
+      <!-- project create TEST IT -->
+      <div id="project-create-test-it" class="step" data-off-y="800">
+        <h2>Execute it!</h2>
+        <pre class="prettify prettyprint"><code class="language-term"> 
+$ ls
+package.json
+Gruntfile.js
+src/
+node_modules/
+$ grunt
+
+Done, without errors.
+$ _
+        </code></pre>
+     </div>
+
+<!-- = RUNNING WEB SERVER
+  -- ================================================== -->
+
+<div id="running-webserver" class="step"      
+     data-off-ref="hands-on"></div>
+
+<div class="step"
+     data-off-scale="0.15"
+     data-off-x="-675" data-off-y="400">
+
+  <h2>Install library tasks *</h2>
+  <pre class="prettyprint"><code class="language-term">
+$ npm install --save-dev "grunt-contrib-connect"
+  </code></pre>
+</div>
+<div class="step" data-off-y="800">  
+  <h2>Load installed task</h2>
+  <pre class="prettyprint"><code class="language-javascript">
+// (L) Gruntfile.js load tasks
+grunt.loadNpmTasks('grunt-contrib-connect');
+  </code></pre>
+</div>
+<div class="step" data-off-y="800">  
+  <h2>Configure the webserver task</h2>
+  <pre class="prettyprint"><code class="language-javascript">
+// (C) Gruntfile.js task configurations
+connect: {
+  server: {
+    options: {
+      keepalive: true,     // wait until Ctrl+C
+      hostname: '0.0.0.0', // allow remote conn.
+      port: 9003,
+      base: 'src/'
+    }
+  }
+}
+  </code></pre>
+</div>
+<div class="step" data-off-y="800">  
+  <h2>Create sequence task</h2>
+  <pre class="prettyprint"><code class="language-javascript">
+// (T) Gruntfile.js tasks
+grunt.registerTask('server', ['connect']);
+  </code></pre>
+</div>
+<div class="step" data-off-y="800">
+  <h2>Replace Gruntfile.js *</h2>
+  <pre class="x-small prettyprint"><code class="language-javascript"
+>/** Gruntfile.js */
+module.exports = function(grunt) {
+
+  // Project tasks configurations
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+    
+    // (C) Tasks configurations here
+    connect: {
+      server: {
+        options: {
+          keepalive: true,
+          hostname: '0.0.0.0', port: 9003,
+          base: 'src/'
+        }
+      }
+    } 
+ });
+
+  // (L) Load here grunt plugins with tasks
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  // (T) Add here your task(s) 
+  grunt.registerTask('server', ['connect']);
+  grunt.registerTask('default', []);
+};</code></pre>
+</div>
+<div class="step" data-off-y="800">  
+  <h2>Execute it!</h2>
+  <pre class="prettyprint"><code class="language-term">
+$ grunt server
+  </code></pre>
+  <h3>you may also try:</h3>
+  <pre class="prettyprint"><code class="language-term">
+# Try any of these
+$ grunt 
+$ grunt dist
+$ grunt connect
+  </code></pre>
+</div>
+
+<!-- = MINIFICATION
+  -- ================================================== -->
+
+<div id="minification" class="step"      
+     data-off-ref="hands-on"></div>
+
+<div class="step "
+     data-off-scale="0.15"
+     data-off-x="685" data-off-y="400">
+
+  <h2>Install library tasks *</h2>
+  <pre class="prettyprint"><code class="language-term">
+$ npm install --save-dev     \
+    "grunt-contrib-htmlmin"  \
+    "grunt-contrib-cssmin"   \
+    "grunt-contrib-uglify"   \
+    "grunt-contrib-imagemin" \
+    "grunt-contrib-copy"
+  </code></pre>
+</div>
+<div class="step " data-off-y="800">
+  <h2>Load tasks *</h2>
+  <pre class="prettyprint"><code class="language-javascript">
+// (L) Gruntfile.js load tasks
+grunt.loadNpmTasks('grunt-contrib-htmlmin');
+grunt.loadNpmTasks('grunt-contrib-cssmin');
+grunt.loadNpmTasks('grunt-contrib-uglify');
+grunt.loadNpmTasks('grunt-contrib-imagemin');
+grunt.loadNpmTasks('grunt-contrib-copy');
+  </code></pre>
+</div>
+<div class="step" data-off-y="800">  
+  <h2>Configure tasks *</h2>
+  <pre class="prettyprint small"><code class="language-javascript">
+// (C) Gruntfile.js task configurations
+htmlmin: { dist: { options: {removeAttributeQuotes:true},
+  files: [{expand:true, cwd:'src/', src:'**/*.html', dest:'dist'}]}},
+cssmin: { dist: { options: {report:'min'},
+  files: [{expand:true, cwd:'src/', src:'**/*.css', dest:'dist'}]}},
+uglify: { dist: { options: {report:'min'},
+  files: [{expand:true, cwd:'src/', src:'**/*.js', dest:'dist'}]}},
+imagemin: { dist: { options: {report:'min'},
+  files: [{expand:true, cwd:'src/', src:'**/*.{png,jpg}', dest:'dist'}]}},
+copy: { dist: { 
+  files: [
+    {expand:true, cwd:'src/', src:'**/*.xml', dest:'dist'},
+    {expand:true, cwd:'src/', src:'**/*.dwt', dest:'dist'}]}},
+// ... also replace previous connect configuration
+connect: { options: { hostname:'0.0.0.0' },
+  src: { options: { port:9003, base:'src/' }},
+  dist: { options: { keepalive:true,port:9004, base:'dist/' }}}
+  </code></pre>
+</div>
+<div class="step" data-off-y="800">  
+  <h2>Create sequence task *</h2>
+  <pre class="prettyprint"><code class="language-javascript">
+// (T) Gruntfile.js tasks
+grunt.registerTask('dist', [
+  'htmlmin',
+  'cssmin',
+  'uglify',
+  'imagemin',
+  'copy'
+]);
+grunt.registerTask('server', [
+  'dist',
+  'connect:src',
+  'connect:dist'
+]);
+grunt.registerTask('default', ['server']);
+  </code></pre>
+</div>
+<div class="step" data-off-y="800">  
+  <h2>Execute it!</h2>
+  <pre class="prettyprint"><code class="language-term">
+$ grunt
+  </code></pre>
+</div>
+
+
+<!-- = BONUS TRACK
+  -- ================================================== -->
+
+<div id="bonus-track" class="step"      
+     data-off-ref="hands-on"></div>
+
+<div id="livereload" class="step slide master-photo-row"
+     data-off-scale="0.15"
+     data-off-x="2070" data-off-y="400">
+
+  <div class="photo centered"><div><div>
+    <img class="photo" src="images/livereload.png">
+  </div></div></div>
+  <div class="row"><div><div>
+    <h1>Use livereload</h1>
+    <h3>You can see your changes while you're writing!</h3>
+  </div></div></div>
+</div>
+<div class="step " data-off-y="800">
+  <h2>Install library task *</h2>
+  <p>It is included in watch task</p>
+  <pre class="prettyprint"><code class="language-term">
+$ npm install --save-dev "grunt-contrib-watch"
+  </code></pre>
+</div>
+<div class="step " data-off-y="800">
+  <h2>Load tasks *</h2>
+  <pre class="prettyprint"><code class="language-javascript">
+// (L) Gruntfile.js load tasks
+grunt.loadNpmTasks('grunt-contrib-watch');
+  </code></pre>
+</div>
+<div class="step" data-off-y="800">  
+  <h2>Configure tasks *</h2>
+  <pre class="prettyprint small"><code class="language-javascript">
+// (C) Gruntfile.js task configurations
+watch: { 
+  options: { livereload:true },
+  htmls: { 
+    files: ['src/**/*.html'],
+    tasks: ['htmlmin']},
+  images: { 
+    files: ['src/**/*.{png,jpg,jpeg}'],
+    tasks: ['imagemin']},
+  styles: { 
+    files: ['src/**/*.css'],
+    tasks: ['cssmin']},
+  scripts: { 
+    files: ['src/**/*.js'],
+    tasks: ['uglify']},
+  xmls: { 
+    files: ['src/**/*.xml'],
+    tasks: ['copy']},
+  dwts: { 
+    files: ['src/**/*.dwt'],
+    tasks: ['copy']}
+},
+  </code></pre>
+</div>
+<div class="step" data-off-y="800">  
+  <h2>Update sequence task *</h2>
+  <pre class="prettyprint"><code class="language-javascript">
+// (T) Gruntfile.js tasks
+grunt.registerTask('server', ['dist',
+  'connect:src',
+  'watch'
+]);
+  </code></pre>
+</div>
+<div class="step" data-off-y="800">  
+  <h2>Execute it!</h2>
+  <pre class="prettyprint"><code class="language-term">
+$ grunt
+  </code></pre>
+  <p>You should install the 
+    <a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei">LiveReload chrome plugin</a>.</p>
+</div>
+
+
+
+    </div><!-- end #impress -->
+
+    <script src="components.js"></script>
+    <script src="scripts.js"></script>
+    
+    <script>
+    var port = 19002;//35729;
+    var livereload = document.createElement("SCRIPT");
+    livereload.setAttribute('src', 
+    'http://'+window.location.hostname+':'+port+'/livereload.js');
+    document.getElementsByTagName("BODY")[0].appendChild(livereload);
+    </script>
+
+  </body>
+</html>

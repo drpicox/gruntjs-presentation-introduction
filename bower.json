@@ -1,0 +1,12 @@
+{
+  "name": "gruntjs-presentation-introduction",
+  "version": "1.0.0",
+  "dependencies": {
+    "impress.js": "~0.5.3",
+    "normalize-css": "~2.1.2"
+  },
+  "devDependencies": {
+    "google-code-prettify": "~1.0.0",
+    "jquery": "~2.0.2"
+  }
+}

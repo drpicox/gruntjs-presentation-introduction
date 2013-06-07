@@ -1,0 +1,81 @@
+@slideWidth: @stepWidth;
+@slideHeight: @stepHeight;
+@slideMargin: @stepMargin;
+
+.step.slide { 
+  height: @slideHeight;    
+
+  &.with-light { 
+    &::before { 
+      content: " "; display: block; position: absolute; 
+      @o: -@slideMargin; top:@o;left:@o;bottom:@o;right:@o;
+      background: white; z-index: -1;
+      border-radius: 15px;
+      }
+    
+    code { 
+      background: #eeeff4;
+      }
+    }
+
+  &.with-brackets {
+    @o: @slideMargin; //offset
+    @color: fade(black,70%); //#525252;
+
+    // left right walls
+    &::before { 
+      content: ' '; display: block; position: absolute;
+      top: -@o*2; left: -@o*2; bottom: -@o*2; width: @o; 
+      background: @color;
+      box-shadow: @slideWidth+@o*3 0 0 @color;
+      }
+    // top bottom limits
+    &::after { 
+      content: ' '; display: block; position: absolute; z-index: 1;
+      top: -@o*2; left: -@o; height: @o; width: @o;
+      background: @color;
+      box-shadow: @slideWidth+@o 0 0 @color,
+                  0 @slideHeight+@o*3 0 @color,
+                  @slideWidth+@o @slideHeight+@o*3 0 @color;
+      }
+    }
+
+  &.with-bracket-left {
+    @o: @slideMargin; //offset
+    @color: fade(black,70%); //#525252;
+
+    // left right walls
+    &::before { 
+      content: ' '; display: block; position: absolute;
+      top: -@o*2; left: -@o*2; bottom: -@o*2; width: @o; 
+      background: @color;
+      }
+    // top bottom limits
+    &::after { 
+      content: ' '; display: block; position: absolute; z-index: 1;
+      top: -@o*2; left: -@o; height: @o; width: @o;
+      background: @color;
+      box-shadow: 0 @slideHeight+@o*3 0 @color;
+      }
+    }
+
+  &.with-bracket-top {
+    @o: @slideMargin; //offset
+    @color: fade(black,70%); //#525252;
+
+    // left right walls
+    &::before { 
+      content: ' '; display: block; position: absolute;
+      left: -@o*2; top: -@o*2; right: -@o*2; height: @o; 
+      background: @color;
+      }
+    // top bottom limits
+    &::after { 
+      content: ' '; display: block; position: absolute; z-index: 1;
+      left: -@o*2; top: -@o; height: @o; width: @o;
+      background: @color;
+      box-shadow: @slideWidth+@o*3 0 0 @color;
+      }
+    }
+
+}

@@ -1,0 +1,67 @@
+.transition(@property,@time: 0.5s) { 
+  -webkit-transition: @property @time;
+  -moz-transition:    @property @time;
+  -ms-transition:     @property @time;
+  -o-transition:      @property @time;
+  transition:         @property @time;
+  }
+
+.fade-in { 
+  opacity: 0; .transition(opacity);  
+  }
+.active.fade-in, .active .fade-in { 
+  opacity: 1; 
+  }
+.appear { visibility: hidden; }
+.active .appear { visibility: visible; }
+
+.move-up { 
+  position: relative;
+  top: 100px; opacity: 0;
+  .transition(all);  
+  }
+.active .move-up { 
+  top: 0px; opacity: 1;
+  }
+
+.roll-down { 
+  position: relative;
+  height: 0;
+  overflow:hidden; 
+  .transition(height);
+  }
+.active .roll-down { 
+  height: auto;
+  }
+  
+//.active.roll-down, .active .roll-down { }
+
+
+.delay(@time:@2s) { 
+  -webkit-transition-delay: @time;
+  -moz-transition-delay:    @time;
+  -ms-transition-delay:     @time;
+  -o-transition-delay:      @time;
+  transition-delay:         @time;
+ }
+
+.delay-1s   { .delay(1s); }
+.delay-1_2s { .delay(1.2s); }
+.delay-1_4s { .delay(1.4s); }
+.delay-1_6s { .delay(1.6s); }
+.delay-2s   { .delay(2s); }
+.delay-2_2s { .delay(2.2s); }
+.delay-3s   { .delay(3s); }
+.delay-4s   { .delay(4s); }
+.delay-5s   { .delay(5s); }
+
+@-webkit-keyframes blinker {  
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+.blink {
+  -webkit-animation-name: blinker;  
+  -webkit-animation-iteration-count: infinite;  
+  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  -webkit-animation-duration: 1s; 
+}

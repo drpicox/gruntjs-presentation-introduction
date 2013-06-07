@@ -1,0 +1,36 @@
+.bullets-box { 
+  position: absolute;
+  top: @stepHeight * 0.25;
+  line-height: @stepHeight * 0.75;
+  max-width: @stepWidth * 1;
+
+  ul.bullets { 
+    display: inline-block;
+    vertical-align: middle;
+    }
+  }
+
+ul.bullets { 
+  width: 90%;
+  @margin: 1.4em;
+  line-height: 1.3;
+
+  li+li { 
+    margin-top: 1.5em;
+    }
+
+  ul { 
+    font-size: 80%;
+    li { 
+      margin-top: 0.5em;
+      }
+    }
+ }
+
+ul.compact { 
+  li+li { margin-top: 0.5em; }
+  }
+
+ul.squared { 
+  list-style-type: square;
+  }
