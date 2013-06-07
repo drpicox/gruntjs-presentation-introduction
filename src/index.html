@@ -18,7 +18,7 @@
   </div></div></div>
 
   <div class="small co"><div><div>
-    Dr. David Rodenas / <a href="https://twitter.com">@drpicox</a>
+    Dr. David Rodenas / <a href="https://twitter.com/drpicox" target="_blank">@drpicox</a> / <a href="http://david-rodenas.com" target="_blank">david-rodenas.com</a>
   </div></div></div>
 </div>
 
@@ -42,7 +42,7 @@
   <div class="by"><div><div>
     Dr. David Rodenas 
     <br>
-    <a href="https://twitter.com">@drpicox</a>
+    <a href="https://twitter.com/drpicox" target="_blank">@drpicox</a>
   </div></div></div>
 </div><!-- end #home -->
 
@@ -686,12 +686,25 @@ $ grunt
     <script src="scripts.js"></script>
     
     <script>
+    (function(){
+    var hostname = window.location.hostname.toLowerCase();
+    if (hostname == "localhost" || hostname.slice(0,3) == "192") {
     var port = 19002;//35729;
     var livereload = document.createElement("SCRIPT");
     livereload.setAttribute('src', 
     'http://'+window.location.hostname+':'+port+'/livereload.js');
     document.getElementsByTagName("BODY")[0].appendChild(livereload);
+    }})();
     </script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-41577406-1', 'drpicox.github.io');
+ga('send', 'pageview');
+</script>
 
   </body>
 </html>
